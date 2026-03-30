@@ -48,7 +48,7 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="relative md:hidden w-full h-[350px] mb-6 rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
               <img 
-                src="/images/" 
+                src="/images/profile.jpg" 
                 alt="Ridwan Muse" 
                 className="absolute inset-0 w-full h-full object-cover opacity-60" 
               />
@@ -146,7 +146,7 @@ const Hero = () => {
             {/* Image container with border effect */}
             <div className="relative rounded-2xl overflow-hidden border-2 border-white/20 shadow-xl shadow-black/50 w-72 h-96">
               <img 
-                src="/images/" 
+                src="/images/profile.jpg" 
                 alt="Ridwan Muse" 
                 className="w-full h-full object-cover" 
               />
