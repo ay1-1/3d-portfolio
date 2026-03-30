@@ -91,54 +91,54 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React Developer",
+    name: "JavaScript / TypeScript",
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Next Developer",
+    name: "React / Next.js",
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Backend Developer",
+    name: "Node.js / Express",
     imgPath: "/images/logos/node.png",
   },
   {
-    name: "Interactive Developer",
+    name: "MongoDB / SQL",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "Docker / AI Integration",
     imgPath: "/images/logos/git.svg",
   },
 ];
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "JavaScript / TypeScript",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Next Developer",
+    name: "React / Next.js",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
+    name: "Node.js / Express",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
+    name: "MongoDB / SQL",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Docker / AI Integration",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -147,7 +147,7 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Samson .O. brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Ridwan brought creativity and technical expertise to the team, significantly improving frontend performance and delivery.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Frontend Developer",
@@ -159,7 +159,7 @@ const expCards = [
     ],
   },
   {
-    review: "Tech Samix contributions to NigerChat web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Contributions to NigerChat web applications were outstanding, with strong ownership and a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "Full Stack Developer",
@@ -171,7 +171,7 @@ const expCards = [
     ],
   },
   {
-    review: "Tech Samix work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "Work on Appwrite’s mobile app delivered high quality and efficiency, improving the mobile product experience.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "React Native Developer",
@@ -201,45 +201,45 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Charle's Visuals",
-    mentions: "@estherhoward",
+    name: "Global Ventures",
+    mentions: "@globalventures",
     review:
-      "I can’t say enough good things about SamixTech. He was able to take our complex church media project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Ridwan delivered a polished, high-performance product with clear communication and a strong engineering mindset.",
     imgPath: "/images/client1.png",
   },
   {
-    name: "Olu charles",
-    mentions: "@wadewarren",
+    name: "BrightWorks Studio",
+    mentions: "@brightworks",
     review:
-      "Working with Samix was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with Ridwan was a seamless experience. He translated product goals into quality software with care and speed.",
     imgPath: "/images/client3.png",
   },
   {
-    name: "Niles Gideon",
-    mentions: "@guyhawkins",
+    name: "Core Systems",
+    mentions: "@coresystems",
     review:
-      "Collaborating with SamixTech was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Ridwan brings professionalism and precision to every project. His work elevated our user experience and performance across the platform.",
     imgPath: "/images/client2.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Momentum Labs",
+    mentions: "@momentumlabs",
     review:
-      "Olabanji. E, was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Ridwan was a pleasure to work with. He delivered a modern, intuitive product that exceeded expectations.",
     imgPath: "/images/client5.png",
   },
   {
-    name: "Olajide Gloria",
-    mentions: "@floydmiles",
+    name: "Atlas Commerce",
+    mentions: "@atlascommerce",
     review:
-      "Samix expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Ridwan’s development expertise helped us launch a more scalable, reliable e-commerce solution on time.",
     imgPath: "/images/client4.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "PixelForge",
+    mentions: "@pixelforge",
     review:
-      "Samson,Olabanji was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Ridwan understood our vision and built a robust backend integration that made the product feel seamless.",
     imgPath: "/images/client6.png",
   },
 ];
@@ -265,38 +265,24 @@ const socialImgs = [
 
 const projects = [
   {
-    title: "Thrive Africa School",
-    description: "An educational platform dedicated to equipping young Africans with relevant tech skills. Offers courses in UI/UX, coding, and digital marketing with expert mentorship. Built to foster a thriving ecosystem of tech talent across the continent.",
+    title: "Catalyst Commerce",
+    description: "A high-performance e-commerce platform with modern UI, optimized state management, and scalable backend architecture.",
     images: ["/images/projects/thrive1.JPG", "/images/projects/thrive2.JPG", "/images/projects/thrive3.JPG"],
-    url: "https://thriveafricaschool.com",
+    url: "https://github.com/ridwan-muse/catalyst-commerce",
     bgColor: "#FFEFDB",
   },
   {
-    title: "CatfishXpress",
-    description: "A premium quick-service restaurant offering authentic Nigerian catfish cuisine. Features fresh, smoked catfish prepared with traditional methods and premium quality ingredients for a delicious dining experience.",
+    title: "AI Workflow Engine",
+    description: "An automation platform integrating AI APIs to streamline business processes and decision-making systems.",
     images: ["/images/projects/xfish1.PNG", "/images/projects/xfish2.PNG"],
-    url: "https://catfishxpress.com",
+    url: "https://github.com/ridwan-muse/ai-workflow-engine",
     bgColor: "#FFE7EB",
   },
   {
-    title: "SmartaCore",
-    description: "Intelligent home automation solutions for smart living. Control appliances, security, and lighting from anywhere. Features IoT-powered energy management and remote access control for modern spaces.",
+    title: "Portfolio 3D Experience",
+    description: "A visually immersive portfolio with advanced animations, interactive UI, and performance-focused design.",
     images: ["/images/projects/smart1.JPG", "/images/projects/smart2.JPG"],
-    url: "https://smartacore.com",
-    bgColor: "#FFEFDB",
-  },
-  {
-    title: "Truconn (R3C0N-M3)",
-    description: "A robust Authentication API featuring secure access with JWT tokens, OTP email verification, and Google authentication. Provides developer-friendly endpoints for scalable and secure web applications.",
-    images: ["/images/projects/truceon1.JPG", "/images/projects/truceon2.JPG"],
-    url: "https://truconn.vercel.app",
-    bgColor: "#FFE7EB",
-  },
-  {
-    title: "World Thunder Ministry",
-    description: "Dedicated to Christian education and spiritual training. Features the Theological College (OTC) for certificate and diploma courses in Bible doctrine and practical ministry to equip individuals for service.",
-    images: ["/images/projects/world-thunder-splash.png"],
-    url: "https://worldthunderministry.com",
+    url: "https://github.com/ridwan-muse/portfolio-3d-experience",
     bgColor: "#FFEFDB",
   },
 ];

@@ -4,10 +4,9 @@ import { useState, useEffect } from "react";
 const Footer = () => {
   // Social links data with URLs
   const socialLinks = [
-    { imgPath: socialImgs[0].imgPath, url: "https://www.instagram.com/" },
-    { imgPath: socialImgs[1].imgPath, url: "https://github.com/" },
-    { imgPath: socialImgs[2].imgPath, url: "https://x.com/" },
-    // Add more as needed
+    { imgPath: socialImgs[0].imgPath, url: "https://github.com/ridwan-muse" },
+    { imgPath: socialImgs[3].imgPath, url: "https://www.linkedin.com/in/ridwan-muse-1a7b873b7" },
+    { imgPath: socialImgs[2].imgPath, url: "mailto:museridwan045@gmail.com" },
   ];
 
   // Animation state for WhatsApp icon
@@ -61,7 +60,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">
-            © {new Date().getFullYear()} SamixTech. All rights reserved.
+            © {new Date().getFullYear()} Ridwan Muse. All rights reserved.
           </p>
         </div>
       </div>

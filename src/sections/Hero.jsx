@@ -30,7 +30,7 @@ const Hero = () => {
     // Create an anchor element to trigger download
     const link = document.createElement('a');
     link.href = '/Resume.pdf';
-    link.download = 'SamixTech_Resume.pdf';
+    link.download = 'RidwanMuse_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -48,8 +48,8 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="relative md:hidden w-full h-[350px] mb-6 rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
               <img 
-                src="/images/profile.jpg" 
-                alt="Samson O" 
+                src="/images/" 
+                alt="Ridwan Muse" 
                 className="absolute inset-0 w-full h-full object-cover opacity-60" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
@@ -105,10 +105,11 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10">
-              Hi, I'm SamixTech (Samson .O) — a passionate Software Engineer from Ondo, Nigeria.
-              My journey started with a deep curiosity for tech and creativity, which 
-              led me into Frontend Development, 
-              then expanded into Fullstack Engineering, video editing, and design.
+              Hi, I'm Ridwan Muse — a Full Stack Engineer focused on building scalable,
+              high-performance web applications with modern technologies. I specialize in crafting
+              seamless user experiences backed by robust backend systems. My work blends clean
+              architecture with intelligent automation to create smarter, more efficient digital
+              products. Build something amazing every time.
             </p>
 
             <div className="flex items-center gap-4 mt-2">
@@ -145,8 +146,8 @@ const Hero = () => {
             {/* Image container with border effect */}
             <div className="relative rounded-2xl overflow-hidden border-2 border-white/20 shadow-xl shadow-black/50 w-72 h-96">
               <img 
-                src="/images/profile.jpg" 
-                alt="Samson O" 
+                src="/images/" 
+                alt="Ridwan Muse" 
                 className="w-full h-full object-cover" 
               />
               
@@ -155,8 +156,8 @@ const Hero = () => {
               
               {/* Name badge at bottom */}
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                <h3 className="text-white font-bold text-xl">Samson O.</h3>
-                <p className="text-white-50 text-sm">Fullstack Engineer</p>
+                <h3 className="text-white font-bold text-xl">Ridwan Muse</h3>
+                <p className="text-white-50 text-sm">Full Stack Engineer</p>
               </div>
             </div>
           </div>
