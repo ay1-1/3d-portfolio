@@ -43,9 +43,10 @@ const Footer = () => {
           
           {/* WhatsApp Icon with Animation */}
           <a 
-            href="http://wa.me/+2349169771575" 
+            href="http://wa.me/+2348071977607" 
             target="_blank" 
             rel="noopener noreferrer" 
+            title="Chat on WhatsApp"
             className={`icon whatsapp-icon ${isAnimating ? 'pulse' : ''}`}
           >
             <svg 

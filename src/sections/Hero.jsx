@@ -26,15 +26,7 @@ const Hero = () => {
     );
   });
 
-  const downloadResume = () => {
-    // Create an anchor element to trigger download
-    const link = document.createElement('a');
-    link.href = '/Resume.pdf';
-    link.download = 'RidwanMuse_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+
 
   return (
     <section id="hero" className="relative overflow-hidden pt-26">
@@ -51,6 +43,7 @@ const Hero = () => {
                 src="/images/profile.jpg" 
                 alt="Ridwan Muse" 
                 className="absolute inset-0 w-full h-full object-cover opacity-60" 
+                onError={({ currentTarget }) => { currentTarget.src = '/profile.jpg.jpg'; }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
               
@@ -121,17 +114,18 @@ const Hero = () => {
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
               </Button>
               
-              {/* Desktop Resume Button - hidden on mobile */}
-              <button 
-                onClick={downloadResume}
-                className="resume-btn hidden md:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-md border border-white/30 hover:border-white/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300"
+              {/* Resume Button */}
+              <a
+                href="/Resumes.pdf"
+                download="RidwanMuse_Resume.pdf"
+                className="resume-btn flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-md border border-white/30 hover:border-white/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300"
                 aria-label="Download Resume"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
                 <span className="text-white font-medium">Resume</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -149,6 +143,7 @@ const Hero = () => {
                 src="/images/profile.jpg" 
                 alt="Ridwan Muse" 
                 className="w-full h-full object-cover" 
+                onError={({ currentTarget }) => { currentTarget.src = '/profile.jpg.jpg'; }}
               />
               
               {/* Overlay with gradient */}
