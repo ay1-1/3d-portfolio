@@ -6,6 +6,8 @@ import Button from "../components/Button";
 import { words } from "../constants";
 
 const Hero = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   useGSAP(() => {
     gsap.fromTo(
       ".hero-text h1",
@@ -31,7 +33,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative overflow-hidden pt-26">
       <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
+        <img src={baseUrl + "images/bg.png"} alt="" />
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-5 md:px-10 py-12">
@@ -40,10 +42,10 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="relative md:hidden w-full h-[350px] mb-6 rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
               <img 
-                src="/images/profile.jpg" 
+                src={baseUrl + "images/profile.jpg"} 
                 alt="Ridwan Muse" 
                 className="absolute inset-0 w-full h-full object-cover opacity-60" 
-                onError={({ currentTarget }) => { currentTarget.src = '/profile.jpg.jpg'; }}
+                onError={({ currentTarget }) => { currentTarget.src = baseUrl + 'profile.jpg.jpg'; }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
               
@@ -116,7 +118,7 @@ const Hero = () => {
               
               {/* Resume Button */}
               <a
-                href="/Resumes.pdf"
+                href={baseUrl + "Resumes.pdf"}
                 download="RidwanMuse_Resume.pdf"
                 className="resume-btn flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-md border border-white/30 hover:border-white/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300"
                 aria-label="Download Resume"
@@ -140,10 +142,10 @@ const Hero = () => {
             {/* Image container with border effect */}
             <div className="relative rounded-2xl overflow-hidden border-2 border-white/20 shadow-xl shadow-black/50 w-72 h-96">
               <img 
-                src="/images/profile.jpg" 
+                src={baseUrl + "images/profile.jpg"} 
                 alt="Ridwan Muse" 
                 className="w-full h-full object-cover" 
-                onError={({ currentTarget }) => { currentTarget.src = '/profile.jpg.jpg'; }}
+                onError={({ currentTarget }) => { currentTarget.src = baseUrl + 'profile.jpg.jpg'; }}
               />
               
               {/* Overlay with gradient */}
